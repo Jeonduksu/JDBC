@@ -1,0 +1,27 @@
+DROP TABLE MEMBER;
+
+CREATE TABLE MEMBER(
+	M_NO INT AUTO_INCREMENT primary key,
+	M_NAME VARCHAR(20) not null,
+	M_AGE INT NOT NULL,
+	M_GENDER VARCHAR(3) CHECK(M_GENDER IN('M','F')) NOT NULL,
+	M_LOCATION VARCHAR(20),
+	M_JOB VARCHAR(10),
+	M_TEL VARCHAR(20),
+	M_EMAIL VARCHAR(20)
+);
+	
+	
+-- 번호,이름, 나이, 성별, 지역, 직업, 전화번호 메일
+INSERT INTO MEMBER VALUES(NULL, '전덕수',19,'M','화성','강사','010-4075-1234','jin5114jj@naver.com');
+
+select * from MEMBER;
+
+
+
+
+
+
+
+
+
